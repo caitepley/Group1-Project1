@@ -1,0 +1,4 @@
+Link to fitbit & Applewatch data:
+https://www.kaggle.com/datasets/aleespinosa/apple-watch-and-fitbit-data/discussion/370036
+Link to fitbit data:
+https://www.kaggle.com/datasets/arashnic/fitbit?resource=download
