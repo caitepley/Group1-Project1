@@ -15,12 +15,12 @@ The devices used in the Apple Watch – Fit data were the Fitbit Charge HR 2 and
 METs – Metabolic Equivalents, are a simple way to measure the energy cost of physical activities. For example, sitting only uses 1 MET. <br>
 Resting heart rate - your heart rate when your body is at rest. <br>
 Normal heart rate - number of times your heart beats per minute <br>
-Activities used for this project were Running 3, 5, 7 METS and self paced walking <br>
-New question: <br>
+#### Activities used for this project were Running 3, 5, 7 METS and self paced walking <br>
+#### New question: <br>
 Were there significant differences in the measurement of resting heart rates based on activity and device. <br>
-Hypothesis: The Apple Watch records a higher resting heart rate than the Fitbit device. <br>
+#### Hypothesis: The Apple Watch records a higher resting heart rate than the Fitbit device. <br>
 Statistical test: T-Test(independent) <br>
-Results: <br>
+#### Results: <br>
 Here are the p-values results between the two devices on resting heart rate: <br>
 Activity p-value <br>
    Self-Pace walking: 0.00013644418747026964 <br>
@@ -28,7 +28,7 @@ Activity p-value <br>
    Running 5METs: 0.0008572713151761626 <br>
    Running 3 METs: 0.09087616379978523 <br>
   
-Conclusions:
+#### Conclusions:
 There were no significant differences with the between the Apple Watch and Fitbit in recording the resting heart rate.
 
 ### How does the activity level correlate to average heart rate?
