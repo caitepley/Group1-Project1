@@ -2,10 +2,10 @@
 The goal of this project was to examine fitness tracker data to draw  conclusions about the trackers and the physical characteristics and activity of the participants. The datasets were found on kaggle.com  (see 'References section'). The Fitbit and Apple Watch dataset was a record of 49 participants by fitness tracker type, heart rate, activity level, etc. over a 65 minute period. The data was collected and stored in .csv files. The data that was only Fitbit data was collected from 30 people over two months and includes a variety of features including, BMI, sleep, calories burned, etc. in the form of .csv files. For this project, we focused on the files that covered participants' heartrate, intensity of activity, amount of sleep, BMI (body mass index), and activity level. 
 
 ## The questions that we wanted to answer based on the data that we had available to us were:
-1.) How do Apple watches vs. Fitbits compare when taking heart rate data?
-2.) How does the activity level correlate to average heart rate?
-3.) How does the amount of sleep affect Body Mass Index (BMI)
-4.) How does the activity level affect number of calories burned?
+1.) How do Apple watches vs. Fitbits compare when taking heart rate data? <br>
+2.) How does the activity level correlate to average heart rate? <br>
+3.) How does the amount of sleep affect Body Mass Index (BMI) <br>
+4.) How does the activity level affect number of calories burned? <br>
 
 ## Data Analysis & Conclusions:
 ### How do Apple watches vs. Fitbits compare when taking heart rate data?
@@ -28,32 +28,37 @@ Activity p-value <br>
    Running 5METs: 0.0008572713151761626 <br>
    Running 3 METs: 0.09087616379978523 <br>
   
-#### Conclusions:
+#### Conclusion:
 There were no significant differences with the between the Apple Watch and Fitbit in recording the resting heart rate.
 
 ### How does the activity level correlate to average heart rate?
 
-To compare how the participants' average heart rate compares to their overall activity level we used the files 'heartrate_seconds_merged.csv' and 'dailyIntensities_merged.csv' and merged them by the participant ID. A summary table was then created using the data to show the average heart rate and number of minutes at each activity level over the course of data collection for each individual participant. This means that each participant has a single entry for average heart rate and each activity level. 
+To compare how the participants' average heart rate compares to their overall activity level we used the files 'heartrate_seconds_merged.csv' and 'dailyIntensities_merged.csv' from the Fitbit only dataset and merged them by the participant ID. A summary table was then created using the data to show the average heart rate and number of minutes at each activity level over the course of data collection for each individual participant. This means that each participant has a single entry for average heart rate and each activity level. 
 
 Plotting all of the activity data together was not the most helpful as there was too much going on in the graph to draw any conclusions. We can tell from the pie chart that is included with this portion of the project that participants on average spent 81.6% of their time sedentary. Since being sedentary was the most prolific activity people engaged in, we graphed the sedentary minutes vs. the heart rate in a scatter plot and added a linear regression line to see if there are any trends.
 
 From the linear regression and a Pearson's r test resulting in a value of approximately 0.40, we can see that there is a moderate positive correlation between amount of time spent sedentary and the participant's average heartrate. 
 
+#### Conclusion:
+
 The conclusion for this question was that the more minutes an individual spends sedentary, the higher their average heartrate is. It is important to note that this is a small pool of participants, so a larger dataset/datasets would be necessary to draw more complete conclusions. 
 
 ### How does the amount of sleep affect Body Mass Index (BMI)?
 
-To compare how BMI is affected by the amount of sleep a person gets, we used the files 'sleepDay_merged.csv' and 'weightLogInfo_merged.csv'. From these .csv files, we focused on the columns BMI and HoursSleep and merged them on the participant ID column that was present in each .csv file. The average BMI and amount of sleep per participant over the entire length of data collection was then calculated.
+To compare how BMI is affected by the amount of sleep a person gets, we used the files 'sleepDay_merged.csv' and 'weightLogInfo_merged.csv' from the Fitbit only dataset. From these .csv files, we focused on the columns BMI and HoursSleep and merged them on the participant ID column that was present in each .csv file. The average BMI and amount of sleep per participant over the entire length of data collection was then calculated.
 
 The average BMI was then plotted against the average amound of sleep in hours in a scatter plot, and a linear regression was generated from the points. The Pearson's r for the points was approximately 0.814 which indicates a strong correlation between BMI and amount of sleep. 
 
 It is important to note that the dataset used to answer this question is very limited; there were only 7 participants in the data who contributed both BMI and sleep data. With so little data, it is hard to determine potential outliers, and the conclusion for the data cannot be conclusive. 
 
+#### Conclusion:
+
 The conclusion that we can draw from this dataset is that people who get more sleep tend to have a higher BMI, but analysis of a larger dataset/datasets would be necessary to prove/disprove this conclusion. 
 
 ### How does the activity level affect number of calories burned?
 
-
+To compare how activity level affects the overall number of calories you burn in a day, we used the file 'dailyActivity_merged.csv' from the Fitbit only dataset. From this file, we focused on the columns related to activity level and calories. From this, we created a summary table that shows each participants average time spent at each activity level over the course of data collection alongside the average number of calories burnt per day. 
+#### Conclusion:
 ## References:
 Link to Fitbit & Apple Watch data:
 https://www.kaggle.com/datasets/aleespinosa/apple-watch-and-fitbit-data/discussion/370036
