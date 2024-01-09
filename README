@@ -11,11 +11,21 @@ The goal of this project was to examine fitness tracker data to draw conclusions
 ### How do Apple watches vs. Fitbits compare when taking heart rate data?
 ### How does the activity level correlate to average heart rate?
 ### How does the amount of sleep affect Body Mass Index (BMI)?
+
+To compare how BMI is affected by the amount of sleep a person gets, we used the files 'sleepDay_merged.csv' and 'weightLogInfo_merged.csv'. From these .csv files, we focused on the columns BMI and HoursSleep and merged them on the participant ID column that was present in each .csv file. The average BMI and amount of sleep per participant over the entire length of data collection was then calculated.
+
+The average BMI was then plotted against the average amound of sleep in hours in a scatter plot, and a linear regression was generated from the points. The Pearson's r for the points was approximately 0.814 which indicates a strong correlation between BMI and amount of sleep. 
+
+It is important to note that the dataset used to answer this question is very limited; there were only 7 participants in the data who contributed both BMI and sleep data. With so little data, it is hard to determine potential outliers, and the conclusion for the data cannot be conclusive. 
+
+The conclusion that we can draw from this dataset is that people who get more sleep tend to have a higher BMI, but analysis of a larger dataset/datasets would be necessary to prove/disprove this conclusion. 
+
 ### How does the activity level affect number of calories burned?
 
 
 ## References:
 Link to Fitbit & Apple Watch data:
 https://www.kaggle.com/datasets/aleespinosa/apple-watch-and-fitbit-data/discussion/370036
+
 Link to Fitbit data:
 https://www.kaggle.com/datasets/arashnic/fitbit?resource=download
