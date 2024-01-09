@@ -11,7 +11,7 @@ The goal of this project was to examine fitness tracker data to draw  conclusion
 ### How do Apple watches vs. Fitbits compare when taking heart rate data?
 
 The devices used in the Apple Watch – Fit data were the Fitbit Charge HR 2 and the Apple Watch Series 2. <br>
-Terminology <br>
+#### Terminology <br>
 METs – Metabolic Equivalents, are a simple way to measure the energy cost of physical activities. For example, sitting only uses 1 MET. <br>
 Resting heart rate - your heart rate when your body is at rest. <br>
 Normal heart rate - number of times your heart beats per minute <br>
