@@ -23,10 +23,10 @@ Statistical test: T-Test(independent)
 Results:
 Here are the p-values results between the two devices on resting heart rate:
 Activity p-value
-   Self-Pace walking: 0.00013644418747026964
-   Running 7METs: 3.473589188909155e-08
-   Running 5METs: 0.0008572713151761626
-   Running 3 METs: 0.09087616379978523
+   Self-Pace walking: 0.00013644418747026964 <br>
+   Running 7METs: 3.473589188909155e-08 <br>
+   Running 5METs: 0.0008572713151761626 <br>
+   Running 3 METs: 0.09087616379978523 <br>
   
 Conclusions:
 There were no significant differences with the between the Apple Watch and Fitbit in recording the resting heart rate.
