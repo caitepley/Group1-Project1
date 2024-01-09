@@ -10,6 +10,15 @@ The goal of this project was to examine fitness tracker data to draw conclusions
 ## Data Analysis & Conclusions:
 ### How do Apple watches vs. Fitbits compare when taking heart rate data?
 ### How does the activity level correlate to average heart rate?
+
+To compare how the participants' average heart rate compares to their overall activity level we used the files 'heartrate_seconds_merged.csv' and 'dailyIntensities_merged.csv' and merged them by the participant ID. A summary table was then created using the data to show the average heart rate and number of minutes at each activity level over the course of data collection for each individual participant. This means that each participant has a single entry for average heart rate and each activity level. 
+
+Plotting all of the activity data together was not the most helpful as there was too much going on in the graph to draw any conclusions. We can tell from the pie chart that is included with this portion of the project that participants on average spent 81.6% of their time sedentary. Since being sedentary was the most prolific activity people engaged in, we graphed the sedentary minutes vs. the heart rate in a scatter plot and added a linear regression line to see if there are any trends.
+
+From the linear regression and a Pearson's r test resulting in a value of approximately 0.40, we can see that there is a moderate positive correlation between amount of time spent sedentary and the participant's average heartrate. 
+
+The conclusion for this question was that the more minutes an individual spends sedentary, the higher their average heartrate is. It is important to note that this is a small pool of participants, so a larger dataset/datasets would be necessary to draw more complete conclusions. 
+
 ### How does the amount of sleep affect Body Mass Index (BMI)?
 
 To compare how BMI is affected by the amount of sleep a person gets, we used the files 'sleepDay_merged.csv' and 'weightLogInfo_merged.csv'. From these .csv files, we focused on the columns BMI and HoursSleep and merged them on the participant ID column that was present in each .csv file. The average BMI and amount of sleep per participant over the entire length of data collection was then calculated.
