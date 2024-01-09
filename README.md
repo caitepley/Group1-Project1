@@ -10,19 +10,19 @@ The goal of this project was to examine fitness tracker data to draw  conclusion
 ## Data Analysis & Conclusions:
 ### How do Apple watches vs. Fitbits compare when taking heart rate data?
 
-The devices used in the Apple Watch – Fit data were the Fitbit Charge HR 2 and the Apple Watch Series 2.
-Terminology
-METs – Metabolic Equivalents, are a simple way to measure the energy cost of physical activities. For example, sitting only uses 1 MET.
-Resting heart rate - your heart rate when your body is at rest.
-Normal heart rate - number of times your heart beats per minute
-Activities used for this project were Running 3, 5, 7 METS and self paced walking
-New question:
-Were there significant differences in the measurement of resting heart rates based on activity and device.
-Hypothesis: The Apple Watch records a higher resting heart rate than the Fitbit device.
-Statistical test: T-Test(independent)
-Results:
-Here are the p-values results between the two devices on resting heart rate:
-Activity p-value
+The devices used in the Apple Watch – Fit data were the Fitbit Charge HR 2 and the Apple Watch Series 2. <br>
+Terminology <br>
+METs – Metabolic Equivalents, are a simple way to measure the energy cost of physical activities. For example, sitting only uses 1 MET. <br>
+Resting heart rate - your heart rate when your body is at rest. <br>
+Normal heart rate - number of times your heart beats per minute <br>
+Activities used for this project were Running 3, 5, 7 METS and self paced walking <br>
+New question: <br>
+Were there significant differences in the measurement of resting heart rates based on activity and device. <br>
+Hypothesis: The Apple Watch records a higher resting heart rate than the Fitbit device. <br>
+Statistical test: T-Test(independent) <br>
+Results: <br>
+Here are the p-values results between the two devices on resting heart rate: <br>
+Activity p-value <br>
    Self-Pace walking: 0.00013644418747026964 <br>
    Running 7METs: 3.473589188909155e-08 <br>
    Running 5METs: 0.0008572713151761626 <br>
