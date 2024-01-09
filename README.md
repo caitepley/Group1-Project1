@@ -17,7 +17,7 @@ Resting heart rate - your heart rate when your body is at rest. <br>
 Normal heart rate - number of times your heart beats per minute <br>
 #### Activities used for this project were Running 3, 5, 7 METS and self paced walking <br>
 #### New question: <br>
-Were there significant differences in the measurement of resting heart rates based on activity and device. <br>
+Were there significant differences in the measurement of resting heart rates based on activity and device? <br>
 #### Hypothesis: The Apple Watch records a higher resting heart rate than the Fitbit device. <br>
 Statistical test: T-Test(independent) <br>
 #### Results: <br>
@@ -47,18 +47,24 @@ The conclusion for this question was that the more minutes an individual spends 
 
 To compare how BMI is affected by the amount of sleep a person gets, we used the files 'sleepDay_merged.csv' and 'weightLogInfo_merged.csv' from the Fitbit only dataset. From these .csv files, we focused on the columns BMI and HoursSleep and merged them on the participant ID column that was present in each .csv file. The average BMI and amount of sleep per participant over the entire length of data collection was then calculated.
 
-The average BMI was then plotted against the average amound of sleep in hours in a scatter plot, and a linear regression was generated from the points. The Pearson's r for the points was approximately 0.814 which indicates a strong correlation between BMI and amount of sleep. 
+The average BMI was then plotted against the average amound of sleep in hours in a scatter plot, and a linear regression was generated from the points. The Pearson's r for the points was approximately 0.125 which indicates a weak correlation between BMI and amount of sleep. 
 
 It is important to note that the dataset used to answer this question is very limited; there were only 7 participants in the data who contributed both BMI and sleep data. With so little data, it is hard to determine potential outliers, and the conclusion for the data cannot be conclusive. 
 
 #### Conclusion:
 
-The conclusion that we can draw from this dataset is that people who get more sleep tend to have a higher BMI, but analysis of a larger dataset/datasets would be necessary to prove/disprove this conclusion. 
+The conclusion that we can draw from this dataset is that people who get more sleep may tend to have a higher BMI, but analysis of a larger dataset/datasets would be necessary to prove/disprove this conclusion. 
 
 ### How does the activity level affect number of calories burned?
 
 To compare how activity level affects the overall number of calories you burn in a day, we used the file 'dailyActivity_merged.csv' from the Fitbit only dataset. From this file, we focused on the columns related to activity level and calories. From this, we created a summary table that shows each participants average time spent at each activity level over the course of data collection alongside the average number of calories burnt per day. 
+
+From this summary, we plotted total calories vs both fairly active minutes and very active minutes in two separate scatter plots and plotted a regression line for each. The Pearson's r for fairly active minutes vs. total calories was approximately 0.16 which indicates a weak correlation, but the Pearson's r for very active minutes vs. total calories was approximately 0.63, which indicates a strong correlation. 
+
 #### Conclusion:
+
+From the two scatter plots, we can conclude that the more fairly active and very active minutes a person has, the more calories they tend to burn in a day. However, very active minutes are more likely to indicate a higher number of calories burned than fairly active minutes. As with the other plots, it is important to note that this dataset is fairly limited, so a larger dataset/datasets would be needed to draw more definite conclusions.
+
 ## References:
 Link to Fitbit & Apple Watch data:
 https://www.kaggle.com/datasets/aleespinosa/apple-watch-and-fitbit-data/discussion/370036
