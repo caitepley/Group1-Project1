@@ -9,6 +9,28 @@ The goal of this project was to examine fitness tracker data to draw conclusions
 
 ## Data Analysis & Conclusions:
 ### How do Apple watches vs. Fitbits compare when taking heart rate data?
+
+The devices used in the Apple Watch – Fit data were the Fitbit Charge HR 2 and the Apple Watch Series 2.
+Terminology
+METs – Metabolic Equivalents, are a simple way to measure the energy cost of physical activities. For example, sitting only uses 1 MET.
+Resting heart rate - your heart rate when your body is at rest.
+Normal heart rate - number of times your heart beats per minute
+Activities used for this project were Running 3, 5, 7 METS and self paced walking
+New question:
+Were there significant differences in the measurement of resting heart rates based on activity and device.
+Hypothesis: The Apple Watch records a higher resting heart rate than the Fitbit device.
+Statistical test: T-Test(independent)
+Results:
+Here are the p-values results between the two devices on resting heart rate:
+Activity p-value
+   Self-Pace walking: 0.00013644418747026964
+   Running 7METs: 3.473589188909155e-08
+   Running 5METs: 0.0008572713151761626
+   Running 3 METs: 0.09087616379978523
+  
+Conclusions:
+There were no significant differences with the between the Apple Watch and Fitbit in recording the resting heart rate.
+
 ### How does the activity level correlate to average heart rate?
 
 To compare how the participants' average heart rate compares to their overall activity level we used the files 'heartrate_seconds_merged.csv' and 'dailyIntensities_merged.csv' and merged them by the participant ID. A summary table was then created using the data to show the average heart rate and number of minutes at each activity level over the course of data collection for each individual participant. This means that each participant has a single entry for average heart rate and each activity level. 
