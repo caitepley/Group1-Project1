@@ -1,0 +1,36 @@
+Here is the VBA script
+7:15
+Sub SubGroupDataAndInsertID()
+    Dim ws As Worksheet
+    Dim lastRow As Long
+    Dim uniqueID As Long
+    Dim currentID As Long
+    Dim i As Long
+    ' Set your worksheet
+    Set ws = ThisWorkbook.Sheets("aw_fb_data_fixed2")
+    ' Find the last row with data in column A
+    lastRow = ws.Cells(ws.Rows.Count, "A").End(xlUp).Row
+    ' Initialize unique ID
+    uniqueID = 1
+    ' Loop through the data
+    For i = 2 To lastRow ' Assuming row 1 contains headers
+        ' Check if the current group is different from the previous one
+        If ws.Cells(i, 4).Value <> ws.Cells(i - 1, 4).Value Or _
+           ws.Cells(i, 5).Value <> ws.Cells(i - 1, 5).Value Or _
+           ws.Cells(i, 6).Value <> ws.Cells(i - 1, 6).Value Or _
+           ws.Cells(i, 7).Value <> ws.Cells(i - 1, 7).Value Then
+            ' Assign a new ID to the current group
+            currentID = uniqueID
+            uniqueID = uniqueID + 1
+        End If
+        ' Insert the ID in a new column
+        ' Add a prefix to the ID column
+        ws.Cells(i, 2).Value = "Group_" & currentID
+        ' Recode gender from 0 to "female" and 1 to "male"
+        If ws.Cells(i, 22).Value = 0 Then
+            ws.Cells(i, 5).Value = "female"
+        ElseIf ws.Cells(i, 22).Value = 1 Then
+            ws.Cells(i, 5).Value = "male"
+        End If
+    Next i
+End Sub
